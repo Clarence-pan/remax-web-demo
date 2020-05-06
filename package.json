@@ -1,0 +1,26 @@
+{
+  "name": "remax-web-demo",
+  "version": "1.0.0",
+  "main": "src/app.tsx",
+  "author": "Caihuanyu <eterlf41@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:remax": "remax build -w -t web",
+    "start:server": "node ./index.js",
+    "start": "concurrently \"npm run start:server\" \"npm run start:remax\""
+  },
+  "dependencies": {
+    "clsx": "^1.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "remax": "2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "concurrently": "5.1.0",
+    "cross-env": "^7.0.2",
+    "express": "4.17.1"
+  },
+  "keywords": [],
+  "description": ""
+}
